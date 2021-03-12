@@ -9,9 +9,9 @@ data-ride="carousel"
 >
 <div class="carousel-inner">
   <div class="carousel-item active" style="position: relative">
-    <a href="/post/{{$posts[0]->id}}">
+    <a href="{/post/{{$posts[0]->id}}}">
       <img
-        src="/storage/thumbnails/{{$posts[0]->image}}"
+        src="{{ URL::to('/')}}/images/{{$posts[0]->image}}"
         class="d-block w-100"
         alt="..."
         id="vvv"

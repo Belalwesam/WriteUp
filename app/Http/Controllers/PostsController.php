@@ -18,7 +18,7 @@ class PostsController extends Controller
         //in case an image was provided 
        if ($request->hasFile('image')) {
             $imageNameToStore = time().'_'.$request->file('image')->getClientOriginalName();
-            $path = $request->file('image')->storeAs('/public/thumbnails' , $imageNameToStore);
+            $path = $request->file('image')->move(base_path() . '/public/images/' , $imageNameToStore);
        }
        //storing informations in the data base 
        Posts::create([
@@ -45,7 +45,7 @@ class PostsController extends Controller
         $updatedImageName = $post->image;
         if ($request->hasFile('image')) {
             $updatedImageName = time().'_'.$request->file('image')->getClientOriginalName();
-            $path = $request->file('image')->storeAs('public/thumbnails', $updatedImageName);
+            $path = $request->file('image')->move(base_path() . '/public/images/' , $updatedImageName);
         }
         $post->title = $request->title;
         $post->body = $request->body;
