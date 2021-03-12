@@ -83,7 +83,7 @@ data-ride="carousel"
      <div class="hero-posts mt-5">
        @foreach ($paginatedPosts as $singlePost)
        <div class="hero-single-post mb-4">
-        <img src="./storage/thumbnails/{{$singlePost->image}}" alt="" class="img-fluid rounded" />
+        <img src="{{ URL::to('/')}}/images/{{$singlePost->image}}" alt="" class="img-fluid rounded" />
         <div class="single-post-text">
           <a href="/post/{{$singlePost->id}}"
             ><h4>
