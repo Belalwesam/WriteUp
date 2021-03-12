@@ -107,7 +107,7 @@
             <div class="post d-flex">
               <a href="/post/{{$posts[$i]->id}}"
                 ><img
-                  src="/storage/thumbnails/{{$posts[$i]->image}}"
+                  src="{{ URL::to('/')}}/images/{{$posts[$i]->image}}"
                   alt=""
                   height="70"
                   width="100"
@@ -251,7 +251,7 @@
             <div class="post d-flex">
               <a href="/post/{{$posts[$i]->id}}"
                 ><img
-                  src="/storage/thumbnails/{{$posts[$i]->image}}"
+                  src="{{ URL::to('/')}}/images/{{$posts[$i]->image}}"
                   alt=""
                   height="70"
                   width="100"
@@ -347,7 +347,7 @@
                 <div class="post d-flex">
                   <a href="/post/{{$posts[$i]->id}}"
                     ><img
-                      src="/storage/thumbnails/{{$posts[$i]->image}}"
+                      src="{{ URL::to('/')}}/images/{{$posts[$i]->image}}"
                       alt=""
                       height="70"
                       width="100"
@@ -371,7 +371,7 @@
                 <div class="post d-flex">
                   <a href="/post/{{$posts[$i]->id}}"
                     ><img
-                      src="/storage/thumbnails/{{$posts[$i]->image}}"
+                      src="{{ URL::to('/')}}/images/{{$posts[$i]->image}}"
                       alt=""
                       height="70"
                       width="100"
@@ -395,7 +395,7 @@
                 <div class="post d-flex">
                   <a href="/post/{{$posts[$i]->id}}"
                     ><img
-                      src="/storage/thumbnails/{{$posts[$i]->image}}"
+                      src="{{ URL::to('/')}}/images/{{$posts[$i]->image}}"
                       alt=""
                       height="70"
                       width="100"
